@@ -356,24 +356,69 @@ No se garantiza su uso en entornos de producción sin modificaciones adicionales
 ## Publicar una release
 
 1. Asegúrate de estar en `main` y con los últimos cambios:
-   ```bash
+
+```bash
+# Ejecutar el comando desde el directorio del proyecto
 git checkout main
 git pull origin main
 ```
+
 2. Etiqueta la versión:
-   ```bash
+
+```bash
 git tag -a v1.0.0 -m "Release v1.0.0"
 ```
+
 3. Empuja la etiqueta a GitHub:
-   ```bash
+
+```bash
 git push origin v1.0.0
 ```
 
 - Esto activará el workflow `.github/workflows/release.yml` y creará un release automático.
 - Canary release: cambia `v1.0.0` por `v1.0.1`, `v1.1.0` según semver.
 
+## Semver 2.0.0 (Versionado Semántico Avanzado)
+
+Sigue esta guía cuando comiences a evolucionar el proyecto:
+
+1. Cambios de parche (sin API breaking): `MAJOR.MINOR.PATCH` → `1.0.1`, `1.0.2`, etc.
+2. Cambios de funcionalidad retrocompatible: `MAJOR.MINOR.PATCH` → `1.1.0`, `1.2.0`.
+3. Cambios incompatibles (breaking): `MAJOR.MINOR.PATCH` → `2.0.0`, `3.0.0`.
+
+Reglas clave:
+
+- Usa `git commit` con mensajes claros: `fix:`, `feat:`, `refactor:`, `perf:`.
+- Agrega un listado en `CHANGELOG.md` por versión.
+- Genera tag al publicar y empuja:
+
+  ```bash
+  git tag -a v${VERSION} -m "Release ${VERSION}"
+  git push origin v${VERSION}
+  ```
+
+- Si hay hotfix urgente, adopta branching `main` + `hotfix/x.y.z`.
+
 ## Generar y publicar GitHub Pages
 
+1. Confirma que el workflow `.github/workflows/pages.yml` ejecuta build.
+
+2. Sube cualquier cambio al branch `main`:
+
+```bash
+git add .
+git commit -m "Update docs"
+git push origin main
+```
+
+3. Verifica Pages en:
+
+`https://orionking12.github.io/vox-omega-quantumfs/`
+
+---
+
+> "En un universo de infinitas posibilidades, cada archivo es una partícula en superposición hasta que decides observarlo."
+> Creado por Jorge Humberto Dávalos González - Todos los derechos reservados © 2026
 1. Confirma que el workflow `.github/workflows/pages.yml` ejecuta build.
 2. Sube cualquier cambio al branch `main`:
    ```bash
