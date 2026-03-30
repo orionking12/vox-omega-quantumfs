@@ -14,8 +14,11 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Set up C++
-        uses: francois/clang-setup@v1
+      - name: Set up Clang
+        uses: egor-tensin/setup-clang@v1
+        with:
+          version: latest
+          platform: x64
 
       - name: Install dependencies
         run: sudo apt-get update && sudo apt-get install -y g++ cmake make python3 python3-pip
