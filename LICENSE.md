@@ -47,4 +47,4 @@ Este software se proporciona "TAL CUAL", sin garantías de ningún tipo. El auto
 Para preguntas, colaboraciones o permisos comerciales, contactar a: [orionchinnar@gmail.com](mailto:orionchinnar@gmail.com)
 
 ---
-*Desarrollado con pasión por la computación cuántica y la innovación tecnológica.*
+*Desarrollado con pasión por  la innovación tecnológica.*
