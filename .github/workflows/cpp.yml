@@ -1,0 +1,39 @@
+name: C++ CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up C++
+        uses: francois/clang-setup@v1
+
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y g++ cmake make python3 python3-pip
+
+      - name: Build
+        run: |
+          mkdir -p build
+          cd build
+          cmake .. -DCMAKE_CXX_STANDARD=17
+          cmake --build . --config Release
+
+      - name: Run tests
+        run: |
+          if [ -f build/vox_omega_fs ]; then
+            ./build/vox_omega_fs
+          elif [ -f build/vox_omega_fs.exe ]; then
+            ./build/vox_omega_fs.exe
+          else
+            echo "No binary found to run"
+            exit 1
+          fi

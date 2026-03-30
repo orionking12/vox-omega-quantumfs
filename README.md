@@ -1,5 +1,8 @@
 # VOX-OMEGA QuantumFS
 
+[![C++ CI](https://github.com/orionking12/vox-omega-quantumfs/actions/workflows/cpp.yml/badge.svg)](https://github.com/orionking12/vox-omega-quantumfs/actions/workflows/cpp.yml)
+[![License](https://img.shields.io/github/license/orionking12/vox-omega-quantumfs?color=blue)](LICENSE.md)
+
 ## Descripción
 
 VOX-OMEGA QuantumFS es una simulación experimental de un sistema de archivos cuántico implementado en C++. Este proyecto demuestra conceptos de la mecánica cuántica aplicados a la gestión de archivos, incluyendo superposición de estados, colapso cuántico y múltiples timelines simultáneos.
