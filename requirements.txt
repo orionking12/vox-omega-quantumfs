@@ -11,6 +11,10 @@ qiskit-aer>=0.12.0  # Para simulaciones locales
 # Data processing
 numpy>=1.21.0
 
+# Test frameworks
+pytest>=7.0.0
+coverage>=7.2.0
+
 # Optional: Para visualización de circuitos
 qiskit-visualization>=0.7.0
 

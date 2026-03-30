@@ -1,6 +1,10 @@
 # VOX-OMEGA QuantumFS
 
 [![C++ CI](https://github.com/orionking12/vox-omega-quantumfs/actions/workflows/cpp.yml/badge.svg)](https://github.com/orionking12/vox-omega-quantumfs/actions/workflows/cpp.yml)
+[![Python Tests](https://github.com/orionking12/vox-omega-quantumfs/actions/workflows/python-tests.yml/badge.svg)](https://github.com/orionking12/vox-omega-quantumfs/actions/workflows/python-tests.yml)
+[![Pages build](https://github.com/orionking12/vox-omega-quantumfs/actions/workflows/pages.yml/badge.svg)](https://github.com/orionking12/vox-omega-quantumfs/actions/workflows/pages.yml)
+[![Release](https://img.shields.io/github/v/release/orionking12/vox-omega-quantumfs)](https://github.com/orionking12/vox-omega-quantumfs/releases)
+[![Coverage](https://img.shields.io/codecov/c/github/orionking12/vox-omega-quantumfs)](https://codecov.io/gh/orionking12/vox-omega-quantumfs)
 [![License](https://img.shields.io/github/license/orionking12/vox-omega-quantumfs?color=blue)](LICENSE.md)
 
 ## Descripción
