@@ -353,6 +353,37 @@ No se garantiza su uso en entornos de producción sin modificaciones adicionales
 📍 Guadalajara, México  
 📅 2026
 
+## Publicar una release
+
+1. Asegúrate de estar en `main` y con los últimos cambios:
+   ```bash
+git checkout main
+git pull origin main
+```
+2. Etiqueta la versión:
+   ```bash
+git tag -a v1.0.0 -m "Release v1.0.0"
+```
+3. Empuja la etiqueta a GitHub:
+   ```bash
+git push origin v1.0.0
+```
+
+- Esto activará el workflow `.github/workflows/release.yml` y creará un release automático.
+- Canary release: cambia `v1.0.0` por `v1.0.1`, `v1.1.0` según semver.
+
+## Generar y publicar GitHub Pages
+
+1. Confirma que el workflow `.github/workflows/pages.yml` ejecuta build.
+2. Sube cualquier cambio al branch `main`:
+   ```bash
+git add .
+git commit -m "Update docs"
+git push origin main
+```
+3. Verifica Pages en:
+   `https://orionking12.github.io/vox-omega-quantumfs/`
+
 ---
 
 > "En un universo de infinitas posibilidades, cada archivo es una partícula en superposición hasta que decides observarlo."
