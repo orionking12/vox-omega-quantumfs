@@ -363,13 +363,13 @@ git checkout main
 git pull origin main
 ```
 
-2. Etiqueta la versión:
+1. Etiqueta la versión:
 
 ```bash
 git tag -a v1.0.0 -m "Release v1.0.0"
 ```
 
-3. Empuja la etiqueta a GitHub:
+1. Empuja la etiqueta a GitHub:
 
 ```bash
 git push origin v1.0.0
@@ -403,7 +403,7 @@ Reglas clave:
 
 1. Confirma que el workflow `.github/workflows/pages.yml` ejecuta build.
 
-2. Sube cualquier cambio al branch `main`:
+1. Sube cualquier cambio al branch `main`:
 
 ```bash
 git add .
@@ -411,23 +411,9 @@ git commit -m "Update docs"
 git push origin main
 ```
 
-3. Verifica Pages en:
+1. Verifica Pages en:
 
 `https://orionking12.github.io/vox-omega-quantumfs/`
-
----
-
-> "En un universo de infinitas posibilidades, cada archivo es una partícula en superposición hasta que decides observarlo."
-> Creado por Jorge Humberto Dávalos González - Todos los derechos reservados © 2026
-1. Confirma que el workflow `.github/workflows/pages.yml` ejecuta build.
-2. Sube cualquier cambio al branch `main`:
-   ```bash
-git add .
-git commit -m "Update docs"
-git push origin main
-```
-3. Verifica Pages en:
-   `https://orionking12.github.io/vox-omega-quantumfs/`
 
 ---
 
