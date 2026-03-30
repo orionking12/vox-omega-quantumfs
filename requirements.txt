@@ -1,0 +1,18 @@
+# VOX-OMEGA QuantumFS - Python Dependencies
+# Para integración con hardware cuántico real (IBM Quantum)
+
+# Core Qiskit libraries
+qiskit>=0.44.0
+qiskit-ibm-provider>=0.7.0
+
+# Additional quantum computing libraries
+qiskit-aer>=0.12.0  # Para simulaciones locales
+
+# Data processing
+numpy>=1.21.0
+
+# Optional: Para visualización de circuitos
+qiskit-visualization>=0.7.0
+
+# Optional: Para algoritmos cuánticos avanzados
+qiskit-algorithms>=0.2.0
